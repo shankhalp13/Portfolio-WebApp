@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.c-foot {
+    width: 100%;
+    /* height: 10vh; */
+    bottom: 0 ;
+}
+@media only screen and (max-width: 640px) {
+.c-foot {
+    position: fixed ;
+    bottom: 0 ;
+    left: 0;
+    width: 100%;
+}
+}
+
+.arrow-bullet::before {
+    content: ">"; /* Use any arrow symbol or even an image URL */
+    margin-right: 0.5rem; /* Adjust spacing between bullet and text */
+}
+/* .cus{
+    background-color: cadetblue;
+} */
+.cus:nth-child(even){
+    background-color: #000000;
+}
+.cus:nth-child(odd){
+    background-color: blue;
+
+}
+/* .cus:nth-child(3){
+    background-color: red;
+
+}
+.cus:nth-child(4){
+    background-color: peru;
+} */
